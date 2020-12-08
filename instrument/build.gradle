@@ -1,0 +1,14 @@
+jar {
+    manifest {
+        attributes(
+                "Premain-Class": "io.imbyungjun.AgentMain",
+                "Can-Retransform-Classes": true
+        )
+    }
+}
+
+dependencies {
+    compile group: 'net.bytebuddy', name: 'byte-buddy-dep', version: '1.10.18'
+    compile group: 'org.javassist', name: 'javassist', version: '3.21.0-GA'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

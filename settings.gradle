@@ -1,0 +1,3 @@
+rootProject.name = 'java-agent-practice'
+include 'instrument'
+include 'main'
